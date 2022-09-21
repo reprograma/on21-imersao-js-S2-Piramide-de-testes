@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online 21 - Imersão JavaScript | Semana 2 | 2022 | Professora Viviane
+Turma Online 21 - Imersão JavaScript | Semana 2 | 2022 | Professora Leticia
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
