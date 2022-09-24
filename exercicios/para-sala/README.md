@@ -1,9 +1,9 @@
 # Exercício de Sala 🏫  
 
-## Nome do Exercicio
+## Testes de Integração:
 
 - Explicação do exercício: 
-[CONTEUDO]
+Baseado no código disponibilizado em [ghibliapi](https://github.com/janaipakos/ghibliapi), crie testes para pelo menos 4 endpoints conforme listado em [Studio Ghibli API (v1.0.1)](https://ghibliapi.herokuapp.com/)
 ---
 
 Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
