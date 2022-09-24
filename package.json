@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/reprograma/on21-imersao-js-S2-Piramide-de-testes#readme",
   "devDependencies": {
-    "jest": "^29.0.3"
+    "jest": "^29.0.3",
+    "supertest": "^6.2.4"
   }
 }
