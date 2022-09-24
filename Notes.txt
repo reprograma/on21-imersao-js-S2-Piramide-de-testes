@@ -1,0 +1,75 @@
+PIRÂMIDES DE TESTES
+
+
+TESTES DE INTEGRAÇÃO
+
+Testar modulos = Teste de Integração (no back)
+Testa mais as funcionalidades.
+
+Por exemplo fazer o Get não é uma parte unitaria, é uma funçao, pois roda funções, rotas e etc. É juntar as partes.
+
+Maior cobertura, detecta problemas de comunicação entre módulos.
+
+Top Down - teste de Api por exemplo, quando a gente usa o postman
+
+Buttom Up - mais trabalhoso, começa por banco de dados.
+
+Teste Hibrido - é sanduíche que mistura os dois anteriores, ele fica no meio.
+
+Teste Big Bang - foge de integração, tem mais devantagens.
+
+CI/CD - CI = continuous integration  / CD = continuous development ou deployment / pipeline é tipo a esteira
+Deploy continuo
+
+Ver video https://www.youtube.com/watch?v=IKjcdYQvcDo 
+
+Consumir API https://ghibliapi.herokuapp.com
+
+Supertest: https://www.npmjs.com/package/supertest 
+npm install supertest --save-dev  
+
+Para remover npm remove nome_da_lib 
+
+https://jestjs.io/pt-BR/docs/using-matchers#strings 
+
+
+Documentação para usar o jest busca por objetos e array.
+Doc: https://jestjs.io/pt-BR/docs/expect#expectarraycontainingarray 
+Doc: https://jestjs.io/pt-BR/docs/expect#expectobjectcontainingobject 
+
+DONTPAD
+http://dontpad.com/on21-imersao-js-S2-TDD-alunas 
+
+End-to-End
+Nao tem Mock, é testa aplicação de inicio ao fim
+É mais caro e ultima etapa
+Usa conexão com banco de test
+Ambiente de teste para isso
+Geralmente quem escreve sao QAs / seria interessante o dev participar pq ele sabe onde pode aparecer erros
+
+zephyr - pesquisar - ferramenta de automação
+
+braninstorming - pesquisar
+Cenario de teste pode ser criado no word 
+
+npm install cypress  --save-dev
+cypress - framework que usa para fazer teste e2e, teste de componente
+
+atualizar o script 
+    "cypress:open": "cypress open"
+
+npm run cypress:open - rodar 
+ai abre uma pagina
+
+
+rodar > abre uma pagina > e2e > continue > escolher browser > vai abrir outra pagina creat your first spec
+> create new escp
+
+ou seja : 
+
+testes unitários -> jest
+testes integrações -> supertest
+testes e2e -> cypress 
+
+Site de mentirinha: http://automationpractice.com/index.php 
+
