@@ -14,7 +14,9 @@ describe("GET /films/{id}", () => {
     })
     test("deve retornar 404 ao passar um id inválido", () => {
         request(ApiUrl)
-            .get("/films/000")
+            const localidades = 'localidades'
+            const distritos = 'distritos'
+            .get(`${localidades/distritos`}")
             .expect(404)
             .then(response => {
                 expect(response.statusCode).toEqual(404)
