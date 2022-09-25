@@ -4,7 +4,7 @@ describe('Login', () => {
         cy.visit('http://automationpractice.com/index.php')
         cy.get('.login').click()
         cy.get('#email').type('teste1984@teste.com.br')
-        cy.get('#password').type('axe')
+        cy.get('#passwd').type('axe')
         cy.get('#SubmitLogin').click()
     })
 })
