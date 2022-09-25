@@ -6,7 +6,9 @@ const ApiUrl = "https://servicodados.ibge.gov.br/api/v1/"
 describe("GET /films/{id}", () => {
     test("deve retornar 200 e encontrar o localidades/distritos na lista", () => {
         request(ApiUrl)
-            .get("localidades/distritos")
+            const localidades = 'localidades'
+            const distritos = 'distritos'
+            .get(`${localidades/distritos}`)
             .expect(200)
             .then(response => {
                 expect(response.body.title).toEqual("Castle in the Sky")
@@ -16,7 +18,7 @@ describe("GET /films/{id}", () => {
         request(ApiUrl)
             const localidades = 'localidades'
             const distritos = 'distritos'
-            .get(`${localidades/distritos`}")
+            .get(`${localidades/distritos}`)
             .expect(404)
             .then(response => {
                 expect(response.statusCode).toEqual(404)
