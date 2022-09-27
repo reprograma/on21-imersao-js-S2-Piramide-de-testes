@@ -1,3 +1,4 @@
+
 describe("Login", () => {
   it("login successful", () => {
     cy.visit("http://automationpractice.com/index.php");
