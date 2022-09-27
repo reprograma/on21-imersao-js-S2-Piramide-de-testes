@@ -26,9 +26,14 @@ describe("GET Pokemon/Personagens", () => {
         expect(response.body.id).toEqual(25);
       });
   });
-  test("deve retornar erro 404 caso seja um personagem inválido", () => {
-    api.get("pokemon/banana/").expect(404);
-  });
+  test("deve retornar 404 ao passar um personagem invalido", () => {
+  api
+        .get("/pokemon/banana")
+        .expect(404)
+        .then(response => {
+            expect(response.statusCode).toEqual(404)
+        })
+})
 });
 
 describe("GET Locations", () => {
@@ -59,8 +64,12 @@ describe("GET Locations", () => {
         );
       });
   });
-
-  test("Deve retornar erro 404 caso seja uma localização inválida", () => {
-    return api.get("/location/banana").expect(404);
-  });
+  test("deve retornar 404 ao passar um personagem invalido", () => {
+    api
+          .get("/location/banana")
+          .expect(404)
+          .then(response => {
+              expect(response.statusCode).toEqual(404)
+          })
+  })
 });

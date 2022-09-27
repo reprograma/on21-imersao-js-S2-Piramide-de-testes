@@ -1,0 +1,35 @@
+O Google Docs é um aplicativo baseado na Web para criar, editar e compartilhar documentos do Word, planilhas, slides e formulários. Todos os arquivos podem ser acessados on-line usando um navegador da Web com conexão à Internet. Os documentos criados podem ser compartilhados como uma página da Web ou documento pronto para impressão. O usuário pode definir restrições sobre quem pode visualizar e editar os documentos. Um único documento pode ser compartilhado de forma colaborativa e trabalhado por diversos indivíduos de diferentes localizações geográficas. Escreva ao menos 5 cenários de teste para o Google Docs.
+
+
+
+
+Example of Test Scenario
+For an eCommerce Application, a few test scenarios would be
+
+Test Scenario 1: Check the Search Functionality
+
+Test Scenario 2: Check the Payments Functionality
+
+Test Scenario 3: Check the Login Functionality
+
+Example of Test Cases
+Test cases for the Test Scenario: “Check the Login Functionality” would be
+
+Check system behavior when valid email id and password is entered.
+Check system behavior when invalid email id and valid password is entered.
+Check system behavior when valid email id and invalid password is entered.
+Check system behavior when invalid email id and invalid password is entered.
+Check system behavior when email id and password are left blank and Sign in entered.
+Check Forgot your password is working as expected
+Check system behavior when valid/invalid phone number and password is entered.
+Check system behavior when “Keep me signed” is checked
+
+
+
+
+
+1) Testar se é possível acessar a homepage google docs
+2) Testar se é possível criar um arquivo do tipo planilha
+3) Testar se o link de compartilhamento está sendo gerado de forma correta
+4) Testar restrição sob um usuário (somente leitura)
+5) Testar se é possível acessar o arquivo compartilhado utilizando um link
