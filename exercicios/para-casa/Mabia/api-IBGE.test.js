@@ -24,3 +24,27 @@ describe("GET/localidades/estados/{UF}/distritos", () => {
       });
   });
 });
+
+describe("GET/localidades/estados/{UF}/municipios", () => {
+  test("Deve retornar o municipio", () => {
+    request(ApiUrl)
+      .get(`${ApiUrl}/localidades/estados/municipios/`)
+      .expect(200)
+      .then((response) => {
+        expect(response.body.municipio.name).toEqual("Caete");
+      });
+  });
+});
+
+describe("GET/localidades/estados/{UF}/distritos", () =>{
+  test("Deve retornar o estado de Sao Paulo", async () => {
+       await request(ApiUrl)
+      .get('/localidades/estados/BA/distritos')
+      .expect(200)
+      .then(response => {
+          // const nameMunicipio = 
+          expect(response.body[0].nome).toEqual("Abaíraaa")
+      })
+  })
+
+})
