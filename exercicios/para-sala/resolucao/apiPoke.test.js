@@ -27,15 +27,14 @@ describe("GET Pokemon/Personagens", () => {
       });
   });
   test("deve retornar 404 ao passar um personagem invalido", () => {
-  api
-        .get("/pokemon/banana")
-        .expect(404)
-        .then(response => {
-            expect(response.statusCode).toEqual(404)
-        })
-})
+    api
+      .get("/pokemon/banana")
+      .expect(404)
+      .then((response) => {
+        expect(response.statusCode).toEqual(404);
+      });
+  });
 });
-
 describe("GET Locations", () => {
   test("Mostrar nome da cidade com id 14 ravaged-path", () => {
     return api
@@ -45,7 +44,6 @@ describe("GET Locations", () => {
         expect(response.body.name).toEqual("ravaged-path");
       });
   });
-
   test("Mostrar nome da região da cidade de canalave-city", () => {
     return api
       .get("/location/1")
@@ -66,10 +64,10 @@ describe("GET Locations", () => {
   });
   test("deve retornar 404 ao passar um personagem invalido", () => {
     api
-          .get("/location/banana")
-          .expect(404)
-          .then(response => {
-              expect(response.statusCode).toEqual(404)
-          })
-  })
+      .get("/location/banana")
+      .expect(404)
+      .then((response) => {
+        expect(response.statusCode).toEqual(404);
+      });
+  });
 });

@@ -1,0 +1,22 @@
+CENÁRIOS DE TESTE HABITICA 
+
+1A) Tarefas
+a) Verificar se é possível adicionar atividades na coluna Tarefas
+b) Verificar se é possível editar os itens da lista ao clicar no lápis
+c) Verificar se é possível adicionar uma data de vencimento da tarefa
+d) Verificar se é possível adicionar uma lista de verificação à uma tarefa
+
+1B) Diárias
+a) Verificar se é possível adicionar uma atividade dentro da coluna Diárias
+b) Verificar se é possível editar os itens da lista ao clicar no lápis
+c) Verificar se a atividade tem vencimento, por exemplo, a cada 3 dias
+
+1C) Hábitos
+a) Verificar se é possível adicionar um hábito na coluna de Hábitos 
+b) Verificar se é possível editar um hábito existente para um bom hábito
+c) Verificar se é possível editar um hábito existente para um mau habito.
+
+1D) Recompensas
+a) Verificar se é possível adicionar atividades ou guloseimas na coluna de Recompensas
+
+
