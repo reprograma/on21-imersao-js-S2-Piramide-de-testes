@@ -1,0 +1,50 @@
+# Cenários de Teste
+
+## 1. Checar funcionalidades de Diarias
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em Adicionar Tarefa
+  E escolher Diária
+  E inserir um título e uma data de início válidas
+  A diária criada deve ser adicionada a lista de diárias.
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em Adicionar Tarefa
+  E escolher Diária
+  E inserir uma data de início inválida
+  A diária não deve ser criada.
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando checar uma diária da coluna de Diárias
+  A diária deve aparecer como Inativa.
+
+## 2. Checar funcionalidades de Hábitos
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em editar um hábito
+  E escolher uma Dificuldade
+  A Dificuldade deve ser adicionada à diária.
+
+- Dado um hábito positivo
+  Quando eu clicar em +
+  O contador do hábito deve somar uma unidade
+  E o hábito deve mostrar a cor verde
+  E o hábito deve ser adicionado a coluna de Fortes.
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em deletar um hábito
+  O hábito deve ser removido da lista de hábitos.
+
+## 3. Checar funcionalidades de Recompensas
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em Adicionar Tarefa
+  E escolher Recompensa
+  E inserir um custo negativo
+  O sistema deve apresentar uma mensagem de erro.
+
+- Dado que eu acesse a Habitica e esteja logada
+  Quando clicar em Adicionar Tarefa
+  E escolher Recompensa
+  E inserir o custo 0
+  A recompensa criada deve ser adicionada a lista de recompensas.
