@@ -26,13 +26,13 @@ describe('filtrar personagem', () => {
     test('filtrar pelo nome de um personagem', () => {
         const personagem = filterCharacter(mockPersonagens, 'karu')
 
-        expect(personagem.length).toEqual(2)
+        expect(personagem.length).toEqual(1)
     })
 
     test('filtrar a lista de personagens e verificar se personagem está vivo', () => {
         const mockIsAlive = jest.fn(() => true)
-        const personagem = filterCharacter(mockPersonagens,'karu', mockIsAlive)
+        const resultado = filterCharacter(mockPersonagens,'karu', mockIsAlive)
 
-        expect(personagem.length).toEqual(2)
+        expect(resultado.length).toBe(resultado)
     })
 })
