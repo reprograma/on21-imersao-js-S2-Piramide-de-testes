@@ -73,3 +73,16 @@ testes e2e -> cypress
 
 Site de mentirinha: http://automationpractice.com/index.php 
 
+
+PARA CASA:
+Um dos sites nao tem erro 404 / testar com uma url errada proposital
+Um dos trabalhos da erro com a versão do node.js
+Fazer ativividade profa juntar
+em outra atividade com cypress tem que colocar a senha primeiro depois login
+
+
+COBERTURA DE TESTE
+
+$ jest --init  //documento de configuração do jest
+> no > node > yes > v8 > yes
+
