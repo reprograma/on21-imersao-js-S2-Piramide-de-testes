@@ -4,15 +4,14 @@ const request = require('supertest')
 const Api_Url = "https://servicodados.ibge.gov.br/api/v1/localidades"
 
 describe('Consultando Api do IBGE', () => {
-    test('Retorna o nome da cidade Curitiba', ()) => {
+    test('Retorna o nome da cidade Curitiba', () => {
         return request(Api_Url)
             .get('/estados/33/distritos')
             .expect(200)
             .then(response => {
                 expect(response.body[0].nome).toEqual("Curitiba")
-            })
-    
         })
+    })
 
     test('Retorna a cidade Angra dos Reis', () => {
         request(Api_Url)
@@ -20,7 +19,7 @@ describe('Consultando Api do IBGE', () => {
             .expect(200)
             .then(response => {
                 expect(response.body[0].nome).toEqual('Angra dos Reis')
-            })
+        })
     })
 
     test('Retornar a região Sudeste', () => {
@@ -29,7 +28,7 @@ describe('Consultando Api do IBGE', () => {
             .expect(200)
             .then(response => {
                 expect(response.body.nome).toEqual("Sudeste")
-            })
+        })
     })
 
     test('Retorna o nome do país, Brasil ', () => {
@@ -38,5 +37,5 @@ describe('Consultando Api do IBGE', () => {
             .expect(200)
             .then(response => {
                 expect(response.body[0].nome).toEqual("Brasil")
-            })
+        })
     })
