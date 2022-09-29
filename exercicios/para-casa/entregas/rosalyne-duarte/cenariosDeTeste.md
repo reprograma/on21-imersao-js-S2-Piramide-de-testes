@@ -74,3 +74,4 @@
 - Clicar em “Delete este(a) Hábito”
 
 - Clicar em “OK” na caixa de Alerta na tela.
+
