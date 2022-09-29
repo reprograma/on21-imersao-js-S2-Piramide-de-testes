@@ -3,8 +3,8 @@ const ApiUrl = "https://servicodados.ibge.gov.br/api/v1/localidades";
 
 describe("Testar os edpointes da API de localidade do IBGE ", () => {
     describe("GET /distritos/{id}", () => {
-        test("Deve retornar todos dados do distrito de fazendinha", () => {
-            return request(ApiUrl)
+        it ("Deve retornar todos dados do distrito de fazendinha", () => {
+            request(ApiUrl)
                 .get("/distritos/160030312")
                 .expect(200)
                 .then(response => {
@@ -13,8 +13,8 @@ describe("Testar os edpointes da API de localidade do IBGE ", () => {
                 })
         })
 
-        test("Deve retornar o distrito de Vitória da Conquista", () => {
-            return request(ApiUrl)
+        it ("Deve retornar o distrito de Vitória da Conquista", () => {
+            request(ApiUrl)
                 .get("/distritos/293330705")
                 .expect(200)
                 .then(response => {
@@ -25,7 +25,7 @@ describe("Testar os edpointes da API de localidade do IBGE ", () => {
 
     })
     describe("GET /estados", () => {
-        test("Deve retornar o estado Amazonas", () => {
+        it ("Deve retornar o estado Amazonas", () => {
             request(ApiUrl)
                 .get("/estados")
                 .expect(200)
@@ -35,7 +35,7 @@ describe("Testar os edpointes da API de localidade do IBGE ", () => {
                 })
         })
 
-        test("Deve retornar s sigla do estado de Goiás", () => {
+        it ("Deve retornar s sigla do estado de Goiás", () => {
             request(ApiUrl)
                 .get("/estados")
                 .expect(200)
@@ -45,7 +45,7 @@ describe("Testar os edpointes da API de localidade do IBGE ", () => {
                 })
         })
 
-        test("Deve retornar o municipio de Barra da Estiva", () => {
+        it ("Deve retornar o municipio de Barra da Estiva", () => {
             request(ApiUrl)
                 .get("/estados/29/municipios")
                 .expect(200)
