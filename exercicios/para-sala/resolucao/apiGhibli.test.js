@@ -11,3 +11,15 @@ describe("GET /films/{id}", () => {
             })
     })
 })
+
+describe("GET /people", () => {
+    test("deve retornar 200 e encontrar a personagem Chihiro", () => {
+        request(ApiUrl)
+            .get("/people")
+            .expect(200)
+            .then(response => {
+                expect(response.body).toEqual(expect.arrayContaining
+                    ([expect.objectContaining({"name": "Chihiro Ogino"})]))
+            })
+    })
+})
