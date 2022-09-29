@@ -1,83 +1,65 @@
-Simular exercicio 2 para casa
+## Exercício 2 - Cenários e casos de teste:
 
-Google docs
+<br>
 
-1. criar
-2. editar
-3. compartilhar
+Escreva os cenários de teste para o [habitica](https://habitica.com/static/home), considere pelo menos duas funcionalidades descritas no [Step 1 da Wiki do Habitica](https://habitica.fandom.com/wiki/Habitica_Wiki). 
+Os cenários de teste não precisam ser completos, mas devem contemplar as principais fluxos da funcionalidade.
 
-PERGUNTAS PARA CENÁRIO DE TESTE
+<br>
 
-Dado um cenário
-Quando tal coisa acontecer
-Então faça outra coisa
-
-por exemplo: Dado pagina login, quando inserir usuário e senha, faça login
+### Test Scenario 1 : Check the Set up To Do's
+<br>
 
 
-Acessar on-line docs  (como você faz isso)
-    visitar google drive
-    logi
-    clicar no botão
+<strong>First Scenario</strong>
 
-Simular cenários acessando a pagina.
+* Given the [Habitica Wiki](https://habitica.com/static/home) page 
+* When clicking on "Set up To Do's"
+* Redirect to the "To Do's" page
 
-PRIMEIRO CENÁRIO 
+<strong>Second Scenario</strong>
 
-* Dado que acesso o Google Drive e não estou logada
-* Quando aparecer a tela de login
-* Digite os dados para login E clica em proximo
+* Given the "To Do's" page
+* Clicking on the icon [ ] "Collapse"
+* Resize to larger page content
 
-SEGUNDO CENÁRIO
-* Verificação em duas etapas
-* Enviar codigo para usuário
-* Receber chamada ok
-* Carregar pagina principal com arquivos do usuário
+<strong>Third Scenario</strong>
 
-TERCEIRO CENÁRIO
+* Given the "To Do's" page
+* Clicking on list icon named "Contents"
+* Opening a modal with list of features
+* Clicking on "x" icon
+* Close the modal of functionalities list
 
-* Dado que acesso o Google Drive e não estou logada
-* Quando aparecer a tela de login
-* E usuário entrar com senha invalida
-* Então usuário é solicitado digitar senha correta OU esqueceu senha
+<strong>Fourth Scenario</strong>
 
-QUARTO CENÁRIO
-Dado senha Invalida
-* Digitar senha correta
-* Esqueceu senha
+* Given the "To Do's" page
+* Clicking on pencil icon named "Edit"
+* Redirecting to "Edit Page" page
+* Clicking the "Save" button with no changes 
+* Return to updated "To Do" page
 
+### Test Scenario 2 : Check the Set up Dailies.
+<br>
 
+<strong>First Scenario</strong>
 
+* Given the [Habitica Wiki](https://habitica.com/static/home) page 
+* When clicking on "Set up Dailies"
+* Redirect to the "Dailies" page
 
+<strong>Second Scenario</strong>
 
-- Exercício 2 - Cenários e casos de teste:
-Escreva os cenários de teste para o [habitica](https://habitica.com/static/home), considere pelo menos duas funcionalidades descritas no [Step 1 da Wiki do Habitica](https://habitica.fandom.com/wiki/Habitica_Wiki). Os cenários de teste não precisam ser completos, mas devem contemplar as principais fluxos da funcionalidade.
+* Given the "Dailies" page
+* When clicking on the "English" dropdown button
+* Opening the language list
+* When clicking on the "Português do Brasil" language 
+* Update the page  translated into Brazilian Portuguese
 
-Segue tradução do Step 1 que está na Wiki:
+<strong>Third Scenario</strong>
 
-```Etapa 1: inserir tarefas
-Primeiro, insira algumas tarefas. Você pode adicionar mais mais tarde à medida que pensa neles.
-
-1a. Configurar tarefas
-Insira as tarefas que você faz uma vez ou raramente na coluna de tarefas, uma de cada vez. Você pode clicar no lápis para editá-los e adicionar listas de verificação, datas de vencimento e muito mais!
-1b. Configurar Diárias
-Insira as atividades que você precisa fazer diariamente ou em um determinado dia da semana na coluna Diárias. Clique no ícone de lápis do item para 'editar' o(s) dia(s) da semana em que será devido. Você também pode vencê-lo repetidamente, por exemplo, a cada 3 dias.
-1c. Crie hábitos
-Insira os hábitos que deseja estabelecer na coluna Hábitos. Você pode editar o Hábito para mudá-lo para apenas um bom hábito (+) ou um mau hábito (-).
-1d. Configurar recompensas
-Além das recompensas oferecidas no jogo, adicione atividades ou guloseimas que você deseja usar como motivação na coluna Recompensas. É importante dar uma pausa ou permitir alguma indulgência com moderação!
-Bônus: se você precisar de inspiração sobre quais tarefas adicionar, consulte as páginas de hábitos de amostra, diárias de amostra, tarefas de amostra e recompensas de amostra.
-```
----
-
-Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
-
-- [ ] Fiz o fork do repositório.
-- [ ] Clonei o fork na minha máquina (`git clone url-do-meu-fork`).
-- [ ] Criei minha branch (` git checkout -b nome-sobrenome `)
-- [ ] Criei a pasta com o meu nome dentro da pasta entregas (` mkdir nome-sobrenome`)
-- [ ] Resolvi o exercício dentro da minha pasta. Como no [exemplo](/on21-imersao-js-S1-TDD/exercicios/para-casa/entregas/exemplo-nome-sobrenome/).
-- [ ] Adicionei as mudanças. (`git add .` para adicionar todos os arquivos, ou `git add nome_do_arquivo` para adicionar um arquivo específico)
-- [ ] Commitei a cada mudança significativa ou na finalização do exercício (`git commit -m "Mensagem do commit"`)
-- [ ] Pushei os commits na minha branch (`git push origin nome-da-branch`)
-- [ ] Criei um Pull Request seguindo as orientações que estao nesse [documento](/on21-imersao-js-S1-TDD/exercicios/para-casa/instrucoes-pull-request.md).
+* Given the "Dailies" page in Brazilian Portuguese
+* When you click on the "View Source Code" button
+* Redirect to the "View Source Code for Dailies" page
+* When clicking the "Back to Page" button
+* Redirect to the "Dailies" page in Brazilian Portuguese
