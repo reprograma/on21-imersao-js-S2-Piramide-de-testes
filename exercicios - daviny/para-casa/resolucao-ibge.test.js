@@ -18,6 +18,17 @@ describe("teste do GET /localidades/", () => {
                 expect(response.body.nome).toEqual('Sudeste')
             })
     })
+    test("deve retornar 200 e encontrar região", async () => {
+        const estadoPara = () => expect.arrayContaining([expect.objectContaining({ nome: "Pará" })])
+        const municipioAnanindeua = estadoPara([expect.objectContaining({ nome: "Ananindeua" })])
+        
+        await request(ApiUrl)
+            .get('/localidades/estados/')
+            .expect(200)
+            .then(response => {
+                expect(response.body).toEqual(municipioAnanindeua)
+            })
+    })
     test("deve retornar 200 e entrotar informações cidade São Paulo", async () => {
         await request(ApiUrl)
             .get('/localidades/municipios/3550308/')
