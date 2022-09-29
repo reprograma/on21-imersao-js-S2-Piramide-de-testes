@@ -36,6 +36,7 @@ describe("GET/localidades/estados/{UF}/municipios", () => {
   });
 });
 
+//caminho infeliz
 describe("GET/localidades/estados/{UF}/distritos", () =>{
   test("Deve retornar o estado de Sao Paulo", async () => {
        await request(ApiUrl)
@@ -43,7 +44,7 @@ describe("GET/localidades/estados/{UF}/distritos", () =>{
       .expect(200)
       .then(response => {
           // const nameMunicipio = 
-          expect(response.body[0].nome).toEqual("Abaíraaa")
+          expect(response.body[0].nome).toEqual("Campo Grandesd")
       })
   })
 

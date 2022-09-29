@@ -1,0 +1,41 @@
+Cenario de testes Habitica 
+
+## Adicionar atividade 
+
+clico em adicionar atividade
+em seguida quero adicionar uma lista de afazeres, então clico em "adicionar to do list"
+a aplicação pede para que eu insira algumas informações para a lista, são essas:
+-titulo
+-notas(comentarios)
+-itens da lista 
+-Dificuldade da tarefa 
+-Data 
+-Tags (para encontrar a lista mais facilmente em conjunto)
+O unico item obrigatório é o título 
+em seguida clicar em "create" para clicar a lista
+
+
+##Editar atividade
+Dado que escolho a atividade,
+clico nos 3 pontinho a direita da atividade 
+escolho a opçao editar 
+a aplicação disponibiliza a opção de editar as seguintes informações:
+-titulo
+-notas(comentarios)
+-itens da lista 
+-Dificuldade da tarefa 
+-Data 
+-Tags (para encontrar a lista mais facilmente em conjunto)
+Contem também a opção para deletar
+O unico item obrigatório é o título 
+em seguida clicar em "save" para salvar a edição
+
+
+
+## Adicionar recompensas
+
+Dado que eu clico no campo adicionar recompensa,
+escolho um nome livre para ser a recompensa pelo cumprimento do habito
+para esse teste escolhi a recompensa "potão de nutela"
+ao acionar a tecla enter, o item é incluido no quadro de recompensas, 
+incluso com a moeda de de "10" automaticamente 
