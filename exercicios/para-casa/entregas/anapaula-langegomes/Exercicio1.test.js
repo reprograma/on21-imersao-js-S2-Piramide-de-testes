@@ -33,7 +33,7 @@ describe('Consultando Api do IBGE', () => {
 
     test('Retorna 404', () => {
         return request(Api_Url)
-            .get('/api/v1/localidades')
+            .get('/api/v1/localidade')
             .expect(404)
             .then(response => {
                 expect(response.statusCode).toEqual(404)
