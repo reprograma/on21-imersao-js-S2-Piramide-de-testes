@@ -1,0 +1,40 @@
+Cenário: Configurar tarefas
+    Dado que eu acesso o site
+    E realizei previamente a criação do meu login
+    E me logar
+    Quando clicar no botão "Adicionar tarefa"
+    E escolher a opção "Afazer"
+    E digitar obrigatoriamente um Título e editar as informações necessárias
+    E clicar no botão "Criar"
+    Então vejo que foi criado a minha Tarefa na coluna de Afazeres. 
+
+Cenário: Configurar Diárias
+    Dado que eu acesso o site
+    E realizei previamente a criação do meu login
+    E me logar
+    Quando clicar no botão "Adicionar tarefa"
+    E escolher a opção "Diária"
+    E digitar obrigatoriamente um Título e editar as informações necessárias
+    E clicar no botão "Criar"
+    Então vejo que foi criado a minha diária na coluna de Diárias. 
+
+Cenário: Crie hábitos
+    Dado que eu acesso o site
+    E realizei previamente a criação do meu login
+    E me logar
+    Quando clicar no botão "Adicionar tarefa"
+    E escolher a opção "Hábito"
+    E digitar obrigatoriamente um Título e editar as informações necessárias
+    E clicar no botão "Criar"
+    Então vejo que foi criado o meu hábito na coluna de Hábitos. 
+
+Cenário: Configurar recompensas
+    Dado que eu acesso o site
+    E realizei previamente a criação do meu login
+    E me logar
+    Quando clicar no botão "Adicionar tarefa"
+    E escolher a opção "Recompensa"
+    E digitar obrigatoriamente um Título e editar as informações necessárias
+    E clicar no botão "Criar"
+    Então vejo que foi criada a minha Recompensa na coluna de Recompensas. 
+
