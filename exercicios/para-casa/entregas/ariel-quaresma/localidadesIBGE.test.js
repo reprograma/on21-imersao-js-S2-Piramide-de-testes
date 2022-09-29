@@ -2,8 +2,9 @@ const request = require('supertest');
 const ApiUrl = "https://servicodados.ibge.gov.br"
 
 
+
 describe("GET/estados/PI", () =>{
-    test("it check if we can get UF of PI by id and should return id 22", () => {
+    test("it checks if we can get UF of PI by id, should return id 22", () => {
 
         request(ApiUrl)
         .get('/api/v1/localidades/estados/22')
@@ -31,7 +32,7 @@ describe("GET/estados/PI", () =>{
         })
     })
 
-    test("it checks if there's the NE region in the result of PI UF", () => {
+    test("it checks if there's the name:Piauí in array of all UFs", () => {
         
         request(ApiUrl)
         .get('/api/v1/localidades/estados')
@@ -41,7 +42,7 @@ describe("GET/estados/PI", () =>{
         })
     })
 
-    test("it checks if there's a city containing in UF array", () => {
+    test("it checks if there's a city named Teresina containing in UF array", () => {
         request(ApiUrl)
         .get('/api/v1/localidades/estados/22/municipios')
         .expect(200)
