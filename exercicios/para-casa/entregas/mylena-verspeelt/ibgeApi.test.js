@@ -6,7 +6,7 @@ describe("Testes Distritos", () => {
     api
       .get("/distritos/260030205")
       .expect(200)
-      .expect('Content-Type', /json/)
+      .expect("Content-Type", /json/)
       .then((response) => {
         expect(response.body).toEqual(
           expect.arrayContaining([
@@ -19,13 +19,19 @@ describe("Testes Distritos", () => {
     api
       .get("/distritos/260020305")
       .expect(200)
-      .expect('Content-Type', /json/)
+      .expect("Content-Type", /json/)
       .then((response) => {
         expect(response.body).toEqual(
-          expect.arrayContaining([
-            expect.objectContaining({ id: 260020305 }),
-          ])
+          expect.arrayContaining([expect.objectContaining({ id: 260020305 })])
         );
+      });
+  });
+  test("Informa um distrito com ID inexistente e deve retornar um array vazio", () => {
+    api
+      .get("/distritos/0000")
+      .expect(200)
+      .then((response) => {
+        expect(response.body).toEqual([]);
       });
   });
 });
