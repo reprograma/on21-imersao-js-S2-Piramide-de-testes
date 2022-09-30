@@ -1,0 +1,21 @@
+1-Escreva os cenários de teste para o [habitica](https://habitica.com/static/home), considere pelo menos duas funcionalidades descritas no [Step 1 da Wiki do Habitica](https://habitica.fandom.com/wiki/Habitica_Wiki). Os cenários de teste não precisam ser completos, mas devem contemplar as principais fluxos da funcionalidade.
+
+Cenário 1: 
+
+1- Dado o  url, acesse o página da Habitica;
+2- Ao entrar na página principal, se não tiver cadastro, insira seus dados na home:nome do usuário, e-mail, senha e confirma senha;
+3-Aperte o botão registre-se;
+4- Dado o cadastro realizado, será verificado uma tela de boas-vindas. Clique em começar já.
+5-.Realize os passos dados e clique na setas para finalizar o processo.
+6- Dado "Prontinho, já está aqui", aperte no botão "Vamo que vamo."
+Cenário 2:
+
+1- Dado o url, acesse a página da Habitica;
+2- Aperte o botão "Login";
+3- Insira seu login - com nome de usuário - e senha ou acesse direto do sua conta do Google;
+4- Informe novamente a senha, caso tenha dado erro ou clique em "Esquece a senha" para alterá-la;
+5- Clique no botão lilás "Adcionar Tarefa" e escolha um dois itens da lista: "Hábito", "Diária", "Afazer", "Recompensa";
+6- Clique na etiqueta " Adcionar um hábito ao habitica",  para editar o Hábito e insira no espaço "Título", uma Tarefa ao Habitica;
+7- Escreva uma observação;
+8- Clique no ícone "Positivo"  ou "Negativo" para inserir as configurações avançadas;
+9- Clique na seta abaixo de dificuldade e escolha os itens: "Trivial", "Fácil", "Médio", "Difícil"

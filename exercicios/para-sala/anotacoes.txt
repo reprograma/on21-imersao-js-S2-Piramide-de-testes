@@ -1,0 +1,9 @@
+1- testes de estes unitarios: = jest
+2- testes de integracao = supertest
+3- testes de e2e = cypress
+
+
+Instalações
+npm install supertest --save --dev
+npx run cypress:open
+instalar: npm install cypress --save --dev
