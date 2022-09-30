@@ -1,0 +1,23 @@
+Cenário de teste 1# - Veriricar funcionalidade de criar nova wiki:
+
+-Verificar se o botão "start wiki" é um botão clicável
+-Verificar se ao clicar em "start wiki" se abra a página com a função de criação da nova wiki
+-Verificar qual o número de caracteres imput com a opção de inserir "Name your community" aceita
+-Verificar como o imput com a opção de inserir "Name your community" se comporto ao receber números e caracteres
+-Verificar se a opção "give your community an address" pode ser diferente da opção "Name your community" que é preenchido automaticamente quando a opção "Name your community" é preenchida
+-Verificar se opção de escolha de idioma abre as opções de idiomas
+-Verificar se opções de idiomas estão clicáveis
+-Verificar como botão "next" se comporta ao não ter nenhum informação nas oprção "Name your community" e "give your community an address" não forem preenchidas
+
+
+Cenário de teste 2# - Verificar funcionalidade de login:
+
+-Verificar se o botão da opção de login é clicável
+-Verificar se ao clicar no botão login se a página destina para página de login
+-Verificar como o página login se comporta ao inserir username não existente
+-Verificar como o página login se comporta ao inserir username existente com senha incorreta
+-Verificar se ao inserir usarname e password correto se a página realiza o login
+-Verificar se a opção "esqueci" a senha destina a página para reset de senha
+-Verificar como a página de "esqueci a senha" se comporta ao receber um usarname que não existe
+-Verificar como a página de "esqueci a senha" ao receber um username existente se as instruções de reset de senha é enviado
+para o e-mail cadastrado.
