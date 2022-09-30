@@ -10,4 +10,12 @@ describe("GET /films/{id}", () => {
                 expect(response.body.title).toEqual("My Neighbor Totoro")
             })
     })
+    test("deve retornar um 404 quando passar um id invalido", () => {
+        request(ApiUrl)
+        .get("/films/000")
+        .expect(404)
+        .then(response => {
+            expect(response.statusCode).toEqual(404)
+        })
+    })
 })
