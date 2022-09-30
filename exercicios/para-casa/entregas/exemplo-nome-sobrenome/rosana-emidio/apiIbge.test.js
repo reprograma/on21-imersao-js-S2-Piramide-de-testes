@@ -45,5 +45,14 @@ describe('Informações do IBGE', () => {
      })
     })
 
+    test("Deve retornar status code 404 ao passar id inválido", () => {
+        request(ApiUrl)
+        .get("/api/v1/localidades/regioes/22")
+        .expect(404)
+        .then(response => {
+            expect(response.statusCode).toEqual(404)
+        })
+    })
+
 })
 
