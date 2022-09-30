@@ -23,6 +23,15 @@ describe("Testar os edpointes da API de localidade do IBGE ", () => {
                 })
         })
 
+        it ("Deve receber status code 404 retornar undefined", () => {
+            request(ApiUrl)
+                .get("/distritos/2")
+                .expect(404)
+                .then(response => {
+                    expect(response.body).toEqual(undefined)
+                })
+        })
+
     })
     describe("GET /estados", () => {
         it ("Deve retornar o estado Amazonas", () => {
