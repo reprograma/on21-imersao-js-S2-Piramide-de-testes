@@ -1,7 +1,7 @@
 const request = require('supertest');
 const ApiUrl = "https://servicodados.ibge.gov.br/api/v1";
 
-describe("testar ", () => {
+describe("deve treinar os possiveis cenarios do IBGE", () => {
     test("deve retornar 200 e informacoes de Adamantina", async() => {
         await request(ApiUrl)
             .get('/localidades/municipios/3500105')
@@ -38,7 +38,7 @@ describe("testar ", () => {
             })
     })
 
-    test("deve retornar 200 e entrotar informações da cidade itaquaquecetuba", async () => {
+    test("deve retornar 200 e encontrar informações da cidade itaquaquecetuba", async () => {
         await request(ApiUrl)
             .get('/localidades/distritos/352310705/')
             .expect(200)
