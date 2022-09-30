@@ -92,7 +92,25 @@ describe("GET IBGE estados", () => {
                 expect(response.body).toEqual(municipio)
             })
         })
-    
+   
+        test("deve retornar 404 ao digitar parametro na url incorreto", () => {
+            request(ApiUrl)
+                .get('/estado')
+                .expect(404)
+                .then(response => {
+                    expect(response.statusCode).toEqual(404)
+                })
+            })
+       
+            
+        test("deve retornar 200 e dados vazios quando é passado o valor errado " , async () => {
+            await request(ApiUrl)
+                .get('/distritos/000')
+                .expect(200)
+                .then(response => {
+                    expect(response.body).toEqual([])
+                })
+            })
 })
 
    
