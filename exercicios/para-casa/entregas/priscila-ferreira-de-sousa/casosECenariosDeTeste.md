@@ -5,7 +5,7 @@
 * <b>Cenário de teste: Checar a configuração de tarefas</b>
     * Caso de teste 1: Verificar se ao cadastrar uma nova tarefa a mesma está sendo persistida;
     * Caso de teste 2: Verificar se ao ultrapassar a data de vencimento da tarefa, sua cor muda para vermelho;
-    *Caso de teste 3: Verificar se ao editar uma tarefa, os dados estão sendo atualizados;
+    * Caso de teste 3: Verificar se ao editar uma tarefa, os dados estão sendo atualizados;
     * Caso de teste 4: Verificar se ao concluir uma tarefa, a cor do To Do é alterada para cinza;
     *Caso de teste 5: Ao excluir as tarefas, verificar se apenas tarefas concluídas foram excluídas;
     
