@@ -10,6 +10,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Adiciona uma nova tarefa
 
 ### - Então
@@ -25,7 +28,11 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
-- Adiciona uma nova tarefa existeste
+
+### - Quando
+
+- Adiciona uma nova tarefa 
+- Identificar que a tarefa já existe
 
 ### - Então
 
@@ -38,10 +45,12 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 
 ### - Dado 
 
-- Salva a nova informação no banco de dados
 - Usuario estaja logado
-- Edite uma nova tarefa existeste
-- configure a diaria da tarefa
+
+### - Quando
+
+- Escolha uma tarefa existeste
+- Altere informações da tarefa existente
 
 ### - Então
 
@@ -56,6 +65,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Edite uma nova tarefa existeste
 - configure a diaria da tarefa
 - Já exista uma atividade cadastrada na diaria
@@ -72,6 +84,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Adiciona um novo hábito
 - Configure o seu hábito como bom ou ruim
 
@@ -88,6 +103,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Adiciona um novo hábito
 - Este hábito já exista nos registros
 
@@ -103,6 +121,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Adiciona uma nova recompensa
 - Coloque a condição para recebimentop da recompensa
 
@@ -119,6 +140,9 @@ Escreva os cenários de teste para o [habitica](https://habitica.com/static/hom
 ### - Dado 
 
 - Usuario estaja logado
+
+### - Quando
+
 - Adiciona uma nova recompensa
 - Coloque a condição para recebimento da recompensa
 - Reconpensa já exista ou
