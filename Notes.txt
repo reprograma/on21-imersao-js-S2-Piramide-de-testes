@@ -86,3 +86,4 @@ COBERTURA DE TESTE
 $ jest --init  //documento de configuração do jest
 > no > node > yes > v8 > yes
 
+refazer
