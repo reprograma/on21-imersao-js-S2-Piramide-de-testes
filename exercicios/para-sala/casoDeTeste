@@ -1,0 +1,44 @@
+O Google Docs é um aplicativo baseado na Web para criar, editar e compartilhar documentos do Word,
+planilhas, slides e formulários. Todos os arquivos podem ser acessados on-line usando um navegador da
+Web com conexão à Internet. Os documentos criados podem ser compartilhados como uma página da Web ou 
+documento pronto para impressão. O usuário pode definir restrições sobre quem pode visualizar e editar
+os documentos. Um único documento pode ser compartilhado de forma colaborativa e trabalhado por diversos
+indivíduos de diferentes localizações geográficas.
+Escreva ao menos 5 cenários de teste para o Google Docs.
+
+1. criar
+2. editar
+3. compartilhar
+
+- acessar on-line docs
+  visitar google drive
+  login
+  clicar no botão
+
+Dado um cenário
+Quando tal coisa acontecer
+Então faça outra coisa
+
+Dado que ee acesso drive.google.com E não estou logada
+Quando aparecer a tela de login
+Digite os dados para login E clica em próxima
+
+Dado que eu acesso drive.google.com E não estou logada
+Quando aparecer a tela de login
+E o usuário entrar com senha inválida
+Então o usuário é solicitado a digitar senha correta OU
+
+Dado
+
+Cenário senha inválida
+ - digitar senha correta
+ - esqueceu senha
+
+
+
+
+Verificação em duas etapas
+ - enviar código para usuário
+ - receber chamada OK
+ - carregar página principal com arquivos do usuário
+
