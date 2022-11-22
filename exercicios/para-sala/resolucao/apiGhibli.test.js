@@ -20,13 +20,27 @@ describe("GET /films/{id}", () => {
     })
 })
 
-describe("GET /people", () => {
-    test("deve retornar 200 e encontrar a personagem Chihiro", () => {
-        request(ApiUrl)
+describe("Get /people" ,()=> {
+
+    test("deve retornar 200 e encontrar a personagem Chihiro", ()=> {
+        const variavel = {"name":"Chihiro Ogino"}
+        const resultado = (expect.arrayContaining([expect.objectContaining(variavel)]))
+        request (ApiUrl)
             .get("/people")
             .expect(200)
-            .then(response => {
-                expect(response.body).toEqual(expect.arrayContaining([expect.objectContaining({"name": "Chihiro Ogino"})]))
+            .then (response =>{
+                expect((response.body)).toEqual(resultado)
+            })
+    })
+
+    test("deve retornar 200 e encontrar a personagem Ashitaka", ()=> {
+        const variavel = {"name": "Ashitaka"}
+        const resultado = (expect.arrayContaining([expect.objectContaining(variavel)]))
+        request (ApiUrl)
+            .get("/people")
+            .expect(200)
+            .then (response =>{
+                expect((response.body)).toEqual(resultado)
             })
     })
 })

@@ -4,7 +4,7 @@ describe('empty spec', () => {
   })
 })
 
-describe("Meu primeiro teste", () => {
+describe("Meu primeiro teste", () =>{
   it("passar por favor", () => {
     expect(true).to.equal(true)
   })
